@@ -1,16 +1,16 @@
 function doCommands {
     process {
-        $exist = Test-Path $_\build
+        $exist = Test-Path $_
         if ($exist -eq $true) {
-            Remove-Item -Path $_\build -Recurse
-            Write-Host Remove Path $_\build
+            Remove-Item -Path $_ -Recurse
+            Write-Host Remove Path $_
             Write-Host ''
         }
         else {
-            Write-Host Path $_\build is not exist
+            Write-Host Path $_ is not exist
             Write-Host ''
         }
     }
 }
 
-Get-ChildItem -Path . -Name -Directory -Filter Step* | doCommands
+Get-ChildItem -Path . -Recurse -Name -Directory -Filter build | doCommands

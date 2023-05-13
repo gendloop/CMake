@@ -1,3 +1,7 @@
 # Folder
 .vscode
-build
+.github
+[Bb]uild
+
+# File
+tree.txt
