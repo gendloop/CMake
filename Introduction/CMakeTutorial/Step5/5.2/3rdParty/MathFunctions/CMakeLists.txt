@@ -26,7 +26,7 @@ check_cxx_source_compiles("
 
 if(HAVE_LOG AND HAVE_EXP)
     target_compile_definitions(MathFunctions
-        PRIVATE "HAVE_LOG" "HAVE_EXP"
+        INTERFACE "HAVE_LOG" "HAVE_EXP"
     )
 endif()
 
