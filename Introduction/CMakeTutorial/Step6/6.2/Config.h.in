@@ -1,0 +1,4 @@
+#define VERSION_MAJOR @Step2Project_VERSION_MAJOR@
+#define VERSION_MINOR @Step2Project_VERSION_MINOR@
+
+#cmakedefine USE_MATH
