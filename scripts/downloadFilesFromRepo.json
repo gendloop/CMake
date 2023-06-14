@@ -1,0 +1,219 @@
+{
+    "datas":[
+        {
+            "files": [
+                "Git/Git_Push.bat",
+                "Git/Git_PushDirectly.bat",
+                "Git/Git_Tag.bat",
+                "Git/Git_Delete_Tag.bat"
+            ],
+            "local_dir": ".",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": true,
+            "token": ""
+        },
+        {
+            "files": [
+                ".github/workflows/Release_Version.yml"
+            ],
+            "local_dir": "../.github/workflows",
+            "user": "gendloop",
+            "repo": "release-version",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                ".github/workflows/Sync_Download.yml"
+            ],
+            "local_dir": "../.github/workflows",
+            "user": "gendloop",
+            "repo": "sync-download",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/SubdirectoryDeleteBuild/Subdirectory_DeleteBuild.bat",
+                "Common/SubdirectoryDeleteBuild/Subdirectory_DeleteBuild.ps1"
+            ],
+            "local_dir": ".",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/SubdirectoryDeleteBuild/Subdirectory_DeleteBuild.bat",
+                "Common/SubdirectoryDeleteBuild/Subdirectory_DeleteBuild.ps1"
+            ],
+            "local_dir": ".",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/Generate_Tree.bat",
+                "Common/GenerateTree/Generate_Tree.ps1"
+            ],
+            "local_dir": ".",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step1/1.1",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step1/1.2",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step1/1.3",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step2/2.1",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step2/2.2",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step3",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step4/4.1",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step4/4.2",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step5/5.1",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step5/5.2",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step6/6.1",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step6/6.2",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        },
+        {
+            "files": [
+                "Common/GenerateTree/tree.ps1"
+            ],
+            "local_dir": "../Introduction/CMakeTutorial/Step7/7.1",
+            "user": "gendloop",
+            "repo": "Tools",
+            "branch": "main",
+            "is_private": false,
+            "token": ""
+        }
+    ]
+}
