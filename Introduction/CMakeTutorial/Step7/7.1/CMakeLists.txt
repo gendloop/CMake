@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # project
-project(Step2Project VERSION 2.0)
+project(Step2Project VERSION 2.0.1)
 
 # c++ standard
 set(CMAKE_CXX_STANDARD 11)
@@ -37,12 +37,12 @@ add_executable(Step2
 )
 
 # target link
-target_link_libraries(Step2 PUBLIC
+target_link_libraries(Step2 PRIVATE
                     ${EXTRA_LIBS}
-)   
+)
 
 # target include
-target_include_directories(Step2 PUBLIC
+target_include_directories(Step2 PRIVATE
                         "${PROJECT_BINARY_DIR}"
                         "${PROJECT_SOURCE_DIR}/src"
 )
@@ -50,10 +50,10 @@ target_include_directories(Step2 PUBLIC
 #install
 install(TARGETS Step2 
     DESTINATION bin
-    )
+)
 install(FILES "${PROJECT_BINARY_DIR}/config.h"
     DESTINATION include
-    )
+)
 
 enable_testing()
 
@@ -72,12 +72,13 @@ add_test(
 )
 
 # include runtime module
-include(InstallRequiredSystemLibraries)
+# include(InstallRequiredSystemLibraries)
 
 # set some CPACK variables
 set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
 set(CPACK_PACKAGE_VERSION_MAJOR "${Step2Project_VERSION_MAJOR}")
 set(CPACK_PACKAGE_VERSION_MINOR "${Step2Project_VERSION_MINOR}")
+set(CPACK_PACKAGE_VERSION_MINOR "${Step2Project_VERSION_PATCH}")
 set(CPACK_SOURCE_GENERATOR "TAG")
 
 # include CPACK module

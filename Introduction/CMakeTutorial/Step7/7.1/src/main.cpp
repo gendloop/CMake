@@ -21,8 +21,8 @@ int main(int argc, char* argv[]) {
         return 0;
     }
 
-    const double value = sqrtTable[0];
-    std::cout << "No matter what you input, it is always eq to 0" << std::endl;
+    const double value = atof(argv[1]);
+    //std::cout << "No matter what you input, it is always eq to 0" << std::endl;
 #ifndef USE_MATH
     cout << "sqrt value: " << sqrt(value) << endl;
 #else

@@ -18,5 +18,7 @@ ctest -C Debug -V
 
 cmake --install . --prefix "./install"
 
+cpack -G ZIP -C Debug
+
 Pop-Location
 
