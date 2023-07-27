@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 
 #if defined(EXPORTING_MYMATH)
@@ -8,4 +9,5 @@
 
 namespace mathfunctions{
     double DECLSPEC sqrt(double x);
+    double DECLSPEC add(double x, double y);
 }

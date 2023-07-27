@@ -3,7 +3,8 @@
 #include <cmath> 
 
 #ifdef USE_MYMATH
-#include "MySqrt/my_sqrt.h"
+#include <my_sqrt.h>
+#include <my_add.h>
 #endif
 
 namespace mathfunctions {
@@ -13,6 +14,14 @@ namespace mathfunctions {
     #else
         return mySqrt(x);
     #endif
+    }
+
+    double add(double x, double y) {
+        #ifndef USE_MYMATH
+            return x+y;
+        #else
+            return myAdd(x, y);
+        #endif
     }
 }
 

@@ -23,16 +23,27 @@ set_tests_properties(Runs
     PROPERTIES PASS_REGULAR_EXPRESSION "The square root of [0-9]+ is [0-9]+"
 )
 
-function(do_test target arg result)
-    add_test(NAME Comp${arg} COMMAND ${target} ${arg})
-    set_tests_properties(Comp${arg}
+function(do_sqr_test target arg result)
+    add_test(NAME Sqr${arg} 
+        COMMAND ${target} ${arg}
+    )
+    set_tests_properties(Sqr${arg}
         PROPERTIES PASS_REGULAR_EXPRESSION ${result}
     )
 endfunction()
 
-do_test(Step9 4 "The square root of 4 is 2")
-do_test(Step9 9 "The square root of 9 is 3")
+do_sqr_test(Step9 4 "The square root of 4 is 2")
+do_sqr_test(Step9 9 "The square root of 9 is 3")
 
+function(do_add_test target x y ret)
+    add_test(NAME Add${x}-${y}
+        COMMAND ${target} ${x} ${y}
+    )
+    set_tests_properties(Add${x}-${y}
+        PROPERTIES PASS_REGULAR_EXPRESSION ${ret}
+    )
+endfunction()
 
-
+do_add_test(Step9 1 2 "The add result of [0-9.]+ and [0-9.]+ is [0-9.]+")
+do_add_test(Step9 2 4 "The add result of [0-9.]+ and [0-9.]+ is [0-9.]+")
 
