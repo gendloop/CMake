@@ -22,6 +22,30 @@ install(EXPORT MathFunctionsTargets
     DESTINATION lib/cmake/MathFunctions
 )
 
+include(CMakePackageConfigHelpers)
+configure_package_config_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/config.cmake.in
+    "${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsConfig.cmake"
+    INSTALL_DESTINATION "cmake/example"
+    NO_SET_AND_CHECK_MACRO
+    NO_CHECK_REQUIRED_COMPONENTS_MACRO
+)
+
+write_basic_package_version_file(
+    "${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsConfigVersion.cmake"
+    VERSION "${${PROJECT_NAME}_VERSION_MAJOR}.${${PROJECT_NAME}_VERSION_MINOR}.${${PROJECT_NAME}_VERSION_PATCH}"
+    COMPATIBILITY AnyNewerVersion
+)
+
+install(FILES
+    ${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsConfig.cmake
+    ${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsConfigVersion.cmake
+    DESTINATION lib/cmake/MathFunctions
+)
+
+export(EXPORT MathFunctionsTargets
+    FILE "${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsTargets.cmake"
+)
 
 include(CTest)
 add_test(NAME Runs COMMAND Step9)
