@@ -19,14 +19,15 @@ target_link_libraries(Step9 PUBLIC MathFunctions)
 
 install(EXPORT MathFunctionsTargets
     FILE MathFunctionsTargets.cmake
+    # NAMESPACE ${PROJECT_NAME}::
     DESTINATION lib/cmake/MathFunctions
 )
 
 include(CMakePackageConfigHelpers)
 configure_package_config_file(
-    ${CMAKE_CURRENT_SOURCE_DIR}/config.cmake.in
-    "${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsConfig.cmake"
-    INSTALL_DESTINATION "cmake/example"
+    ${PROJECT_SOURCE_DIR}/config.cmake.in
+    ${PROJECT_BINARY_DIR}/MathFunctionsConfig.cmake
+    INSTALL_DESTINATION lib/cmake/MathFunctions
     NO_SET_AND_CHECK_MACRO
     NO_CHECK_REQUIRED_COMPONENTS_MACRO
 )
