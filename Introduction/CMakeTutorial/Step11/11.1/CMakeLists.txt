@@ -19,7 +19,7 @@ target_link_libraries(Step9 PUBLIC MathFunctions)
 
 install(EXPORT MathFunctionsTargets
     FILE MathFunctionsTargets.cmake
-    # NAMESPACE ${PROJECT_NAME}::
+    NAMESPACE ${PROJECT_NAME}::
     DESTINATION lib/cmake/MathFunctions
 )
 

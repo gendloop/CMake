@@ -33,6 +33,7 @@ if(USE_MYMATH)
     target_include_directories(MyAdd 
         INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/MyAdd>
+        $<INSTALL_INTERFACE:include>
     )
     
     target_link_libraries(MathFunctions PRIVATE MySqrt)
@@ -47,6 +48,7 @@ endif()
 
 if(TARGET MyAdd)
     list(APPEND installable_libs MyAdd)
+    install(FILES MyAdd/my_add.h DESTINATION include/MyAdd)
 endif()
 
 install(TARGETS ${installable_libs}
