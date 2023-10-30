@@ -1,7 +1,7 @@
 option(USE_MYMATH "Use my math" OFF)
 
 #  MathFunctions
-add_library(MathFunctions STATIC
+add_library(MathFunctions SHARED
     math_functions.h
     math_functions.cpp
 )
@@ -10,6 +10,7 @@ target_include_directories(MathFunctions
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:include>
 )
+target_compile_definitions(MathFunctions PRIVATE "EXPORT")
 
 if(USE_MYMATH)
     # MathFunctions
