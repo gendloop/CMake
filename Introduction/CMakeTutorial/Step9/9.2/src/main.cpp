@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 {
   if (argc < 2) {
     // report version
-    std::cout << argv[0] << " Version " 
+    std::cout << argv[0] << " Version "
       << Step9_VERSION_MAJOR << "."
       << Step9_VERSION_MINOR << "."
       << Step9_VERSION_PATCH

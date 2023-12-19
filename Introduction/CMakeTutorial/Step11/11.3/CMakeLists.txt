@@ -17,4 +17,3 @@ if(MathFunctions_FOUND)
 	include(CTest)
 	add_test(NAME T1 COMMAND TestStep9)
 endif()
-

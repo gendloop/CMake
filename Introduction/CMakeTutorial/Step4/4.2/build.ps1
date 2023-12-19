@@ -16,4 +16,3 @@ cmake --build . --config Debug
 ctest -C Debug
 
 Pop-Location
-

@@ -9,6 +9,6 @@ Push-Location build
 
 cmake ..
 cmake --build . --config Debug
-ctest -C Debug -VV 
+ctest -C Debug -VV
 
 Pop-Location

@@ -20,7 +20,7 @@ add_executable(Step9 src/main.cpp)
 target_include_directories(Step9 PRIVATE ${CMAKE_BINARY_DIR})
 target_link_libraries(Step9 PUBLIC MathFunctions)
 
-# set_target_properties(Step9 PROPERTIES 
+# set_target_properties(Step9 PROPERTIES
 #     DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}
 #     RELEASE_POSTFIX ${CMAKE_RELEASE_POSTFIX}
 # )
@@ -36,7 +36,7 @@ set_tests_properties(Runs
 )
 
 function(do_sqr_test target arg result)
-    add_test(NAME Sqr${arg} 
+    add_test(NAME Sqr${arg}
         COMMAND ${target} ${arg}
     )
     set_tests_properties(Sqr${arg}
@@ -67,4 +67,3 @@ set(CPACK_SOURCE_GENERATOR "7Z")
 
 # include CPACK module
 include(CPACK)
-

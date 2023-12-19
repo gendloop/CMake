@@ -5,8 +5,8 @@ add_library(MathFunctions SHARED
     math_functions.h
     math_functions.cpp
 )
-target_include_directories(MathFunctions 
-    INTERFACE 
+target_include_directories(MathFunctions
+    INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
@@ -23,8 +23,8 @@ if(USE_MYMATH)
         MySqrt/my_sqrt.cpp
     )
     target_compile_definitions(MySqrt PRIVATE "EXPORTING_MYSQRT")
-    target_include_directories(MySqrt 
-        INTERFACE 
+    target_include_directories(MySqrt
+        INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/MySqrt>
     )
 
@@ -34,11 +34,11 @@ if(USE_MYMATH)
         MyAdd/my_add.cpp
     )
     target_compile_definitions(MyAdd PRIVATE "EXPORTING_MYADD")
-    target_include_directories(MyAdd 
-        INTERFACE 
+    target_include_directories(MyAdd
+        INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/MyAdd>
     )
-    
+
     target_link_libraries(MathFunctions PRIVATE MySqrt)
     target_link_libraries(MathFunctions PRIVATE MyAdd)
 endif()
@@ -48,7 +48,7 @@ set(installable_libs MathFunctions)
 if(TARGET MySqrt)
     list(APPEND installable_libs MySqrt)
 endif()
-if(TARGET MyAdd) 
+if(TARGET MyAdd)
     list(APPEND installable_libs MyAdd)
 endif()
 

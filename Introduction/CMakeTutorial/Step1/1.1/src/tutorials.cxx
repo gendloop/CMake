@@ -7,10 +7,10 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // => double 
+    // => double
     const double input_value = atof(argv[1]);
-    std::cout 
-        << "The square root of " << input_value 
+    std::cout
+        << "The square root of " << input_value
         << " is " << sqrt(input_value)
         << std::endl;
     return 0;

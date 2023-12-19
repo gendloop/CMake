@@ -14,4 +14,3 @@ add_executable(Tutorial src/tutorials.cxx)
 target_include_directories(Tutorial PUBLIC
                             "${PROJECT_BINARY_DIR}"
 )
-

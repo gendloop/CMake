@@ -24,7 +24,7 @@ set_tests_properties(Runs
 )
 
 function(do_sqr_test target arg result)
-    add_test(NAME Sqr${arg} 
+    add_test(NAME Sqr${arg}
         COMMAND ${target} ${arg}
     )
     set_tests_properties(Sqr${arg}
@@ -46,4 +46,3 @@ endfunction()
 
 do_add_test(Step9 1 2 "The add result of [0-9.]+ and [0-9.]+ is [0-9.]+")
 do_add_test(Step9 2 4 "The add result of [0-9.]+ and [0-9.]+ is [0-9.]+")
-

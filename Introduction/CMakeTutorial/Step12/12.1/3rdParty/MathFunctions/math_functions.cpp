@@ -1,6 +1,6 @@
 #include "math_functions.h"
 
-#include <cmath> 
+#include <cmath>
 
 #ifdef USE_MYMATH
 #include <my_sqrt.h>
@@ -9,7 +9,7 @@
 
 namespace mathfunctions {
     double sqrt(double x) {
-    #ifndef USE_MYMATH   
+    #ifndef USE_MYMATH
         return std::sqrt(x);
     #else
         return mySqrt(x);
@@ -24,6 +24,3 @@ namespace mathfunctions {
         #endif
     }
 }
-
-
-    

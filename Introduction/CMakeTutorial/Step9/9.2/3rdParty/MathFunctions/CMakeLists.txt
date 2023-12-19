@@ -24,7 +24,7 @@ if(USE_MYMATH)
         MyAdd/my_add.cpp
     )
     target_include_directories(MyAdd INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/MyAdd)
-    
+
     target_link_libraries(MathFunctions PRIVATE MySqrt)
     target_link_libraries(MathFunctions PRIVATE MyAdd)
 endif()

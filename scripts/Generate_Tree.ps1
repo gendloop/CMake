@@ -4,7 +4,7 @@ function doCommands {
 
         $exist = Test-Path $dest
         if ($exist -eq $true) {
-            powershell.exe -File $dest 
+            powershell.exe -File $dest
             Write-Host Run $dest
             Write-Host ''
         }

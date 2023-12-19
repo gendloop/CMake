@@ -15,8 +15,8 @@ int main(int argc, char* argv[]) {
 
     cout << argv[0] << endl;
     cout << "VERSION_MAJOR: " << VERSION_MAJOR << endl;
-    cout << "VERSION_MINOR: " << VERSION_MINOR << endl;    
-    
+    cout << "VERSION_MINOR: " << VERSION_MINOR << endl;
+
     if(argc < 2) {
         return 0;
     }

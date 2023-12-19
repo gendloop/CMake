@@ -11,8 +11,8 @@ int main(int argc, char* argv[]) {
 
     cout << argv[0] << endl;
     cout << "VERSION_MAJOR: " << VERSION_MAJOR << endl;
-    cout << "VERSION_MINOR: " << VERSION_MINOR << endl;    
-    
+    cout << "VERSION_MINOR: " << VERSION_MINOR << endl;
+
     if(argc < 2) {
         return 1;
     }
@@ -20,6 +20,6 @@ int main(int argc, char* argv[]) {
     const double value = stod(argv[1]);
     cout << "sqrt value 1: " << sqrt(value) << endl;
     cout << "sqrt value 2: " << mysqrt(value) << endl;
-    
+
     return 0;
 }

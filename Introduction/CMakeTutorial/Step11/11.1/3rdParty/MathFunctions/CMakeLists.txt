@@ -5,8 +5,8 @@ add_library(MathFunctions SHARED
     math_functions.h
     math_functions.cpp
 )
-target_include_directories(MathFunctions 
-    INTERFACE 
+target_include_directories(MathFunctions
+    INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:include>
 )
@@ -21,8 +21,8 @@ if(USE_MYMATH)
         MySqrt/my_sqrt.h
         MySqrt/my_sqrt.cpp
     )
-    target_include_directories(MySqrt 
-        INTERFACE 
+    target_include_directories(MySqrt
+        INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/MySqrt>
     )
 
@@ -31,12 +31,12 @@ if(USE_MYMATH)
         MyAdd/my_add.h
         MyAdd/my_add.cpp
     )
-    target_include_directories(MyAdd 
+    target_include_directories(MyAdd
         INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/MyAdd>
         $<INSTALL_INTERFACE:include>
     )
-    
+
     target_link_libraries(MathFunctions PRIVATE MySqrt)
     target_link_libraries(MathFunctions PRIVATE MyAdd)
 endif()
@@ -59,5 +59,3 @@ install(TARGETS ${installable_libs}
 install(FILES math_functions.h
     DESTINATION include
 )
-
-

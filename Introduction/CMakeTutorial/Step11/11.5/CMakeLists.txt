@@ -17,4 +17,3 @@ file(COPY "${MathFunctions_PATH}/bin/MathFunctions.dll" DESTINATION "${PROJECT_B
 
 include(CTest)
 add_test(NAME T1 COMMAND TestStep9)
-

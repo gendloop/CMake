@@ -19,4 +19,3 @@ ctest -C Debug -V
 cmake --install . --prefix "./install"
 
 Pop-Location
-

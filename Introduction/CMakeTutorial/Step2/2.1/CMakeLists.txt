@@ -20,7 +20,7 @@ add_executable(Step2 src/main.cpp)
 # target link
 target_link_libraries(Step2 PUBLIC
                     MathFunctions
-)   
+)
 
 # target include
 target_include_directories(Step2 PUBLIC

@@ -26,7 +26,7 @@ add_executable(Step2 src/main.cpp)
 # target link
 target_link_libraries(Step2 PUBLIC
                     ${EXTRA_LIBS}
-)   
+)
 
 # target include
 target_include_directories(Step2 PUBLIC
@@ -43,10 +43,10 @@ enable_testing()
 
 # Basic form: dose the application run
 add_test(
-    NAME test1 
-    COMMAND Step2 
+    NAME test1
+    COMMAND Step2
 )
 add_test(
-    NAME test2 
+    NAME test2
     COMMAND Step2 2
 )

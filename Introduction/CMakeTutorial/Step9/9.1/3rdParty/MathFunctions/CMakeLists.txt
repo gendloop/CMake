@@ -25,7 +25,7 @@ if(USE_MYMATH)
     )
     target_compile_definitions(MyAdd PRIVATE "EXPORTING_MYADD")
     target_include_directories(MyAdd INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/MyAdd)
-    
+
     target_link_libraries(MathFunctions PRIVATE MySqrt)
     target_link_libraries(MathFunctions PRIVATE MyAdd)
 endif()
@@ -35,7 +35,7 @@ set(installable_libs MathFunctions)
 if(TARGET MySqrt)
     list(APPEND installable_libs MySqrt)
 endif()
-if(TARGET MyAdd) 
+if(TARGET MyAdd)
     list(APPEND installable_libs MyAdd)
 endif()
 

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 set(MathFunctions_DIR "../11.1/build/install/lib/cmake/MathFunctions")
 
-find_package(MathFunctions CONFIG 
+find_package(MathFunctions CONFIG
 	REQUIRED COMPONENTS Step9::MyAdd
 )
 
@@ -19,4 +19,3 @@ if(MathFunctions_FOUND)
 	include(CTest)
 	add_test(NAME T1 COMMAND TestStep9)
 endif()
-
